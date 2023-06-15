@@ -12,7 +12,7 @@ city =input("Enter your city Name:")
 query =input("Enter your query Name:")
 
 
-driver = webdriver.Chrome(r"C:\Users\rohit\Downloads\chromedriverwin32\chromedriver.exe")
+driver = webdriver.Chrome(r"Path TO Chrome Driver")
 url = f'https://www.google.com/search?rlz=1C1CHBF_enIN958IN958&tbs=lf:1,lf_ui:10&tbm=lcl&sxsrf=APwXEddUTd0fg4wRXdUC4gcAep7GyrixIw:1686030109380&q={query}+in+{city}&rflfq=1&num=10&sa=X&ved=2ahUKEwjr5P_N963_AhWaFIgKHTVwArQQjGp6BAgREAE&biw=1536&bih=714&dpr=1.25'
 driver.get(url)
 sleep(2)
